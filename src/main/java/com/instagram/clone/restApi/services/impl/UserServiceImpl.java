@@ -122,6 +122,7 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
     public User dtoToUser(UserDto userDto) {
         return this.modelMapper.map(userDto, User.class);
     }

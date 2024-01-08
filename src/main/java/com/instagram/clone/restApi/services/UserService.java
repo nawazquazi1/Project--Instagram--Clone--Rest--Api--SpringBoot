@@ -21,7 +21,8 @@ public interface UserService {
 
     UserDto findById(Long userId);
 
-
+    User dtoToUser(UserDto userDto);
+    UserDto userToDto(User user);
     UserDto setProfilePitcher(MultipartFile multipartFile,User user);
 
    void serveUserProfilePitcher(HttpServletResponse response,User user);
