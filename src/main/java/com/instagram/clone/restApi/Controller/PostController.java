@@ -21,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-@RequestMapping("/inst/post")
+@RequestMapping("/inst/clone")
 @AllArgsConstructor
 @Slf4j
 public class PostController {
@@ -30,7 +30,7 @@ public class PostController {
     private final UserRepo userRepo;
     private final FileService fileService;
 
-    @PostMapping("/upload")
+    @PostMapping("/upload/post")
     public ResponseEntity<ApiResponse> uploadPost(@RequestBody PostRequest postRequest, @AuthenticationPrincipal User user) {
         this.postService.createPost(postRequest, user);
         return ResponseEntity.ok(new ApiResponse("Post created successfully", true));
@@ -45,7 +45,7 @@ public class PostController {
         return ResponseEntity.internalServerError().body(new ApiResponse("Unsuccessfully Deleted", false));
     }
 
-    @GetMapping("/user/{userId}")
+    @GetMapping("posts/user/{userId}")
     public ResponseEntity<?> getUserPosts(@PathVariable Long userId) {
         log.info("retrieving posts for user {}", userId);
         User user = this.userRepo.findById(userId).orElseThrow(() -> new ResourceNotFoundException("user", "id", userId));
@@ -62,12 +62,12 @@ public class PostController {
         return ResponseEntity.ok(posts);
     }
 
-    @GetMapping("{postId}")
+    @GetMapping("/post/{postId}")
     public ResponseEntity<Post> findPostById(@PathVariable Long postId) {
         return ResponseEntity.ok(this.postService.findById(postId));
     }
 
-    @PostMapping(value = "/uploadPost/post/{postId}")
+    @PostMapping(value = "/upload/post/{postId}")
     public ResponseEntity<Post> uploadImage(@RequestParam("image") MultipartFile multipartFile, @PathVariable Long postId) {
         return ResponseEntity.ok(this.postService.uploadPost(multipartFile, postId));
     }

@@ -31,7 +31,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public void createPost(PostRequest postRequest, User user) {
-        log.info("creating post image url {}", postRequest.getImageUrl());
+        log.info("creating post {}", postRequest.getCaption());
         Post post = new Post();
         post.setImageUrl(postRequest.getImageUrl());
         post.setCaption(postRequest.getCaption());

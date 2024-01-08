@@ -17,12 +17,9 @@ public class FileServiceImpl implements FileService {
     @Override
     public String uploadImage(String path, MultipartFile image) {
         String imageName = image.getOriginalFilename();
-        System.out.println(imageName);
-
         String randomId = UUID.randomUUID().toString();
         assert imageName != null;
         String fileName = randomId.concat(imageName.substring(imageName.lastIndexOf(".")));
-        System.out.println(fileName);
         String imagePath = path + File.separator + fileName;
         if (this.checkFile(imageName)) {
             try {
