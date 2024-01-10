@@ -64,3 +64,16 @@ The Instagram Clone Rest API is a Spring Boot-based project designed to replicat
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot.git
+
+ 2. **Database Configuration:**
+    = Create a MySQL database named instagram_clone. 
+    = Update the application.properties file with your database configuration.  
+
+3. **Run the Application:**
+   ```bash
+   ./mvnw spring-boot:run
+
+4. **Access Swagger UI:**
+   - Open your web browser and navigate to
+ ```bash
+ http://localhost:8080/swagger-ui.html for interactive API documentation.
