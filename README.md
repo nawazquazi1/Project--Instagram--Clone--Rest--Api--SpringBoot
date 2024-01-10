@@ -75,21 +75,21 @@ The Instagram Clone Rest API is a Spring Boot-based project designed to replicat
 
 4. **Access Swagger UI:**
    - Open your web browser and navigate to
- http://localhost:8080/swagger-ui.html for interactive API documentation.
+ http://localhost:8181/swagger-ui.html for interactive API documentation.
 
 
 ## Swagger-ui
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/53384b99-a2ab-4f2b-8d25-b1e802095f6f)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/2d88e16a-cc13-4650-ad79-16095bd14aee)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/e060b010-810d-4e58-aedd-769fc0c4eccc)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/15c0ac53-3bb0-4ba4-a642-262c7671bf30)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/663156c1-6c64-4c78-88f9-c8a2c0bc6796)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/5b50f4f4-8019-4a95-9564-6c6884e325d3)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/eb3e6e56-84de-48c1-a213-a14b4684ecb5)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/05f9d6ec-d27c-473f-8fb3-1b761fbe1ac6)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/4e2fe176-c39b-41c7-89c1-b9c6847f98eb)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/92b20b88-77e7-416f-8d89-fe8c981376e0)">
-<img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/9d4b19f4-eed1-4ffd-90c6-6ab5e8d95a02)">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/53384b99-a2ab-4f2b-8d25-b1e802095f6f">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/2d88e16a-cc13-4650-ad79-16095bd14aee">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/e060b010-810d-4e58-aedd-769fc0c4eccc">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/15c0ac53-3bb0-4ba4-a642-262c7671bf30">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/663156c1-6c64-4c78-88f9-c8a2c0bc6796">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/5b50f4f4-8019-4a95-9564-6c6884e325d3">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/eb3e6e56-84de-48c1-a213-a14b4684ecb5">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/05f9d6ec-d27c-473f-8fb3-1b761fbe1ac6">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/4e2fe176-c39b-41c7-89c1-b9c6847f98eb">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/92b20b88-77e7-416f-8d89-fe8c981376e0">
+<img width="947" alt="Swagger-UI" src="https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/9d4b19f4-eed1-4ffd-90c6-6ab5e8d95a02">
 
 
 
