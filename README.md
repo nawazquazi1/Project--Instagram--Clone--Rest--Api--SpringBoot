@@ -74,11 +74,11 @@ The Instagram Clone Rest API is a Spring Boot-based project designed to replicat
    ./mvnw spring-boot:run
 
 4. **Access Swagger UI:**
-   - Open your web browser and navigate to
-  ```bash
+   - Open your web browser and navigate to ```bash
  http://localhost:8080/swagger-ui.html for interactive API documentation.
 
-# Swagger-ui
+
+## Swagger-ui
 <img width="947" alt="Swagger-UI" src="[https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/53384b99-a2ab-4f2b-8d25-b1e802095f6f)">
 
 
