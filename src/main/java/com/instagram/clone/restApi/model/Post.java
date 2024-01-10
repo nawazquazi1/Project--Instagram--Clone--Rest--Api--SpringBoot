@@ -30,17 +30,17 @@ public class Post {
     @LastModifiedDate
     private Instant updatedAt;
 
+    //    @JsonBackReference
     @ManyToOne
-    @JsonBackReference
     @JoinColumn(name = "user")
     private User user;
 
-    @OneToMany(mappedBy = "post",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    @JsonManagedReference
+    //    @JsonManagedReference
+    @OneToMany(mappedBy = "post", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Comment> comments = new ArrayList<>();
 
-    @OneToMany(mappedBy = "post",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-    @JsonManagedReference
+    //    @JsonManagedReference
+    @OneToMany(mappedBy = "post", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Likes> likes = new ArrayList<>();
 
     @NotBlank

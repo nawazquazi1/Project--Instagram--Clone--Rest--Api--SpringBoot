@@ -13,7 +13,7 @@ public interface ChatService {
     Chat createChat(Long userId, User reqUser);
 
     List<Chat> findAllChatByUserId(Long userId);
-    Chat findChatByChatId(Long chatIdd);
+    Chat findChatByChatId(Long chatId);
 
     Chat createGroup(GroupChatRequest request, User reqUser);
 

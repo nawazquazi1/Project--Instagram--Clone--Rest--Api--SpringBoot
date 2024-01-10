@@ -1,5 +1,6 @@
 package com.instagram.clone.restApi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -38,7 +39,7 @@ public class User implements UserDetails {
     private String username;
 
     @Column(nullable = false)
-    @NotBlank
+//    @NotBlank
     private String password;
 
     @Column(nullable = false, unique = true)
@@ -60,21 +61,24 @@ public class User implements UserDetails {
 
     private boolean active;
 
-    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role", referencedColumnName = "id"))
     private Set<Role> roles = new HashSet<>();
 
-    @OneToMany(mappedBy = "user",fetch = FetchType.EAGER)
-    @JsonManagedReference
-    private List<Post> posts=new ArrayList<>();
+//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+//    @JsonManagedReference
+//    private List<Post> posts = new ArrayList<>();
 
-    @JsonManagedReference
-    @OneToMany(mappedBy = "follower",fetch = FetchType.EAGER)
-    private Set<Follow> followers=new HashSet<>();
+    //    @JsonManagedReference
+//    @OneToMany(mappedBy = "follower", fetch = FetchType.EAGER)
+//    private Set<Follow> followers = new HashSet<>();
 
-    @JsonManagedReference
-    @OneToMany(mappedBy ="following",fetch = FetchType.EAGER)
-    private Set<Follow> followings=new HashSet<>();
+    ////    @JsonManagedReference
+//    @OneToMany(mappedBy = "following", fetch = FetchType.EAGER)
+//    private Set<Follow> followings = new HashSet<>();
+
+//    @ManyToMany(mappedBy = "users", cascade = CascadeType.ALL)
+//    private Set<Chat> chats = new HashSet<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -82,12 +86,6 @@ public class User implements UserDetails {
                 new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
     }
 
-
-    @Override
-    @JsonIgnore
-    public String getPassword(){
-        return this.password;
-    }
 
     @JsonIgnore
     @Override

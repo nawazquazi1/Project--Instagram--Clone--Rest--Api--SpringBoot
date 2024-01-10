@@ -31,13 +31,26 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public void createPost(PostRequest postRequest, User user) {
-        log.info("creating post {}", postRequest.getCaption());
+        log.info("creating post {}", postRequest.getImageUrl());
         Post post = new Post();
         post.setImageUrl(postRequest.getImageUrl());
         post.setCaption(postRequest.getCaption());
         post.setCreatedAt(Instant.now());
         post.setUser(user);
         post = this.postRepo.save(post);
+        log.info("post {} is saved successfully for user {}", post.getId(), post.getUser());
+    }
+
+    @Override
+    public void createPost(String caption, MultipartFile multipartFile, User user) {
+        log.info("creating post{}",multipartFile.getOriginalFilename());
+        Post post=new Post();
+        String postImageName=this.fileService.uploadImage("image/post/",multipartFile);
+        post.setCreatedAt(Instant.now());
+        post.setCaption(caption);
+        post.setUser(user);
+        post.setImageUrl(postImageName);
+        this.postRepo.save(post);
         log.info("post {} is saved successfully for user {}", post.getId(), post.getUser());
     }
 

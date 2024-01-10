@@ -19,13 +19,13 @@ public class Follow {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //    @JsonBackReference
     @ManyToOne
-    @JsonBackReference
     @JoinColumn(name = "follower")
     private User follower;
 
+    //    @JsonBackReference
     @ManyToOne
-    @JsonBackReference
     @JoinColumn(name = "following")
     private User following;
 

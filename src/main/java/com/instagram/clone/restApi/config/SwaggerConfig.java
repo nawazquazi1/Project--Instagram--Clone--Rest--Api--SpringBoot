@@ -36,4 +36,5 @@ public class SwaggerConfig {
                                 .email("nawazquazi356@gmail.com")))
                 .externalDocs(new ExternalDocumentation());
     }
+
 }

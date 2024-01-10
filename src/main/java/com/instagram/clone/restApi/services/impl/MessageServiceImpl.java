@@ -1,5 +1,6 @@
 package com.instagram.clone.restApi.services.impl;
 
+import com.instagram.clone.restApi.exception.ApiException;
 import com.instagram.clone.restApi.exception.NotAllowedException;
 import com.instagram.clone.restApi.exception.ResourceNotFoundException;
 import com.instagram.clone.restApi.model.Chat;
@@ -53,8 +54,6 @@ public class MessageServiceImpl implements MessageService {
         if (message.getUser().equals(reqUser)) {
             this.messageRepo.deleteById(messageId);
         }
-
-        throw new NotAllowedException("user", "message", "delete");
-
+        throw new ApiException("You Cant Delete Another User's Message" + reqUser.getUsername());
     }
 }

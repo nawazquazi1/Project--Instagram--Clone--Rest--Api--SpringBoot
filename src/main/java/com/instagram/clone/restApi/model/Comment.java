@@ -21,8 +21,8 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //    @JsonBackReference
     @ManyToOne
-    @JsonBackReference
     private Post post;
 
     @ManyToOne

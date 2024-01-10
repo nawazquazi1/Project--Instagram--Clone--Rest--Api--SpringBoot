@@ -12,6 +12,7 @@ import java.util.List;
 @Service
 public interface PostService {
     void createPost(PostRequest postRequest, User user);
+    void createPost(String caption,MultipartFile multipartFile, User user);
 
     Post uploadPost(MultipartFile multipartFile, Long postId);
 

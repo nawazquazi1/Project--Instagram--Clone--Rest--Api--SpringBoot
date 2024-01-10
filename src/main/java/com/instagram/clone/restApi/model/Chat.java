@@ -1,6 +1,8 @@
 package com.instagram.clone.restApi.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
@@ -28,13 +30,13 @@ public class Chat {
 
     private boolean isGroup;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private User createBy;
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<User> users = new HashSet<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     private Set<User> admins = new HashSet<>();
 
 

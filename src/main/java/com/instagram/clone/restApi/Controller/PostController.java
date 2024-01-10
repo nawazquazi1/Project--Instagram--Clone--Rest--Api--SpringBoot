@@ -28,11 +28,16 @@ public class PostController {
 
     private final PostService postService;
     private final UserRepo userRepo;
-    private final FileService fileService;
 
     @PostMapping("/upload/post")
     public ResponseEntity<ApiResponse> uploadPost(@RequestBody PostRequest postRequest, @AuthenticationPrincipal User user) {
         this.postService.createPost(postRequest, user);
+        return ResponseEntity.ok(new ApiResponse("Post created successfully", true));
+    }
+
+    @PostMapping("/upload/post")
+    public ResponseEntity<ApiResponse> uploadPost(@RequestParam("post") String caption, @RequestParam("image") MultipartFile multipartFile, @AuthenticationPrincipal User user) {
+        this.postService.createPost(caption, multipartFile, user);
         return ResponseEntity.ok(new ApiResponse("Post created successfully", true));
     }
 

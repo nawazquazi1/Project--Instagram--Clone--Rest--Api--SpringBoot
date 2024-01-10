@@ -12,6 +12,9 @@ import com.instagram.clone.restApi.security.JwtTokenHelper;
 import com.instagram.clone.restApi.services.UserService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import org.jsondoc.core.annotation.Api;
+import org.jsondoc.core.annotation.ApiMethod;
+import org.jsondoc.core.pojo.ApiVisibility;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -27,6 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 @AllArgsConstructor
+@Api(name = "Instagram Clone Rest Api",description = "User Authentication",group = "user",visibility = ApiVisibility.PUBLIC)
 public class AuthController {
 
     private final UserService userService;
@@ -37,6 +41,7 @@ public class AuthController {
     private UserRepo userRepo;
 
     @PostMapping("/register")
+    @ApiMethod(description = "Add new user")
     public ResponseEntity<JwtAuthResponse> registerUser(@Valid @RequestBody UserDto user) {
         UserDto user1;
         try {
@@ -50,6 +55,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @ApiMethod(description = "Authenticate User")
     public ResponseEntity<JwtAuthResponse> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
         try {
             System.out.println(loginRequest.getUsername() + loginRequest.getPassword());
