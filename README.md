@@ -79,8 +79,6 @@ The Instagram Clone Rest API is a Spring Boot-based project designed to replicat
  http://localhost:8080/swagger-ui.html for interactive API documentation.
 
 # Swagger-ui
-<img width="947" alt="Swagger-UI" src="![Screenshot (4)](https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/2160fb61-2c81-4bee-a870-047311e659a8)
-">
+![Screenshot (4)](https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/53384b99-a2ab-4f2b-8d25-b1e802095f6f)
 
-# 
 
