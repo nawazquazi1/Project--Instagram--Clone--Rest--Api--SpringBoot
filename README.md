@@ -1,3 +1,5 @@
+
+![Screenshot (4)](https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/e4838c7e-f1b3-493e-a73c-370255fdb091)
 # Instagram Clone Rest API
 
 ## Overview
@@ -77,5 +79,3 @@ The Instagram Clone Rest API is a Spring Boot-based project designed to replicat
    - Open your web browser and navigate to
   ```bash
  http://localhost:8080/swagger-ui.html for interactive API documentation.
-
-[Screenshot (4)](https://github.com/nawazquazi1/Project--Instagram--Clone--Rest--Api--SpringBoot/assets/111976978/0db2ca48-631f-47cf-a4e6-5b372efa5c05)
